@@ -14,6 +14,7 @@ const App = () => {
   const handleCalculateButton = () => {
     if(heightField && weightField) {
       setToShow(calculateImc(heightField, weightField));
+      console.log(toShow);
     } else {
       alert('Preencha todas os campos!');
     }
